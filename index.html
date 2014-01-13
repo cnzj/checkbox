@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function init(){
+chkbox = document.getElementById("cb");
+}
+function fun1 () {
+    chkbox.indeterminate = false;
+    chkbox.checked = "true";
+}
+function fun2() {
+    chkbox.indeterminate = false;
+    chkbox.checked = false;
+}
+function fun3() {
+    chkbox.indeterminate = true;
+}
+</script>
+</head>
+
+<body onload="init()">
+  <input id="cb" type="checkbox"/>
+  <button onclick="fun1()">true/选中</button>
+  <button onclick="fun2()">false/不选</button>
+  <button onclick="fun3()">indeterminate/部分选中</button>
+</Body>
+</html>
+
